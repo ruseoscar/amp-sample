@@ -4,13 +4,14 @@
     <meta charset="utf-8" />
     <title>How to support Images with unknown Dimensions</title>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <script
-      async
-      custom-element="amp-carousel"
-      src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"
-    ></script>
     <link rel="canonical" href="<% canonical %>" />
     <meta name="viewport" content="width=device-width" />
+    <script
+      async
+      custom-element="amp-video"
+      src="https://cdn.ampproject.org/v0/amp-video-0.1.js"
+    ></script>
+
     <style amp-boilerplate>
       body {
         -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
@@ -218,6 +219,21 @@
           >SITUS</a
         >
       </div>
+      <amp-video
+        controls
+        autoplay
+        width="464"
+        height="848"
+        poster="https://cdn.discordapp.com/attachments/552686468401856523/1270067552650793010/Screenshot_2024-08-06_at_1.14.49_AM.png?ex=66b25a15&is=66b10895&hm=5a7f063038f90eef37748fa487a56cab30a4dffaa5084d4c9c5af70117691422&"
+      >
+        <source
+          src="https://cdn.discordapp.com/attachments/552686468401856523/1270067354725912728/sample.MP4?ex=66b259e6&is=66b10866&hm=cbdc5e4fc0fb2760eb3a3bd07206430ebaeee283349af9e131d3ffa7c60949c1&"
+          type="video/mp4"
+        />
+        <div fallback>
+          <p>This browser does not support the video element.</p>
+        </div>
+      </amp-video>
     </center>
   </body>
 </html>
